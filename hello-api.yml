@@ -1,12 +1,1 @@
-spring:
-  application:
-    name: hello-api
-  config:
-    import: optional:configserver:http://localhost:8888
-management:
-  endpoints:
-    web:
-      exposure:
-        include: "*"
-server:
-  port: 7777
+welcome: Welcome from server
