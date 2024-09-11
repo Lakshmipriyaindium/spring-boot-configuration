@@ -8,7 +8,7 @@ square-api:
   url: http://localhost:7001/square
 cube-api:
   url: http://localhost:7001/cube
-
+ 
 management:
   endpoints:
     web:
@@ -19,16 +19,16 @@ management:
       show-details: always
     shutdown:
       enabled: true
-
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-    enabled: true
+    enabled: false
   instance:
     prefer-ip-address: true
     hostname: localhost
-
+ 
+ 
 resilience4j:
   circuitbreaker:
     instances:
